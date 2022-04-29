@@ -1,0 +1,247 @@
+/* container for whole page layout*/
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header styles */
+.header_container{
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    background:#abcd;
+    border: dotted white 3px;
+    
+}
+
+/* container for search bar and userinfo */
+#topHeader{
+    grid-row: 1;
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    gap: 5vw;
+    padding: 0 3%;
+}
+
+/* container for user grettings and header buttons */
+#bottomHeader{
+    grid-column: span 2;
+    grid-row:2;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    gap: 5vw;
+    padding: 0 3%;
+}
+
+/* searchBar content styles */
+#searchbar_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    background-color: lightgray;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+#searchBar{
+    width: 80%;
+    height: 100%;
+}
+
+#searchButton{
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    border-radius: 32px;
+    background: transparent;
+}
+
+#searchIcon{
+    width: 24px;
+    height: 24px;
+}
+
+/* user_info section styles */
+#user_info{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:1fr;
+    align-items: center;
+    gap:1.2em;
+    height: 100%;
+}
+
+#alerts, .profile_button{
+    border-radius: 20px;
+    height: fit-content;
+    width: fit-content;
+}
+
+#alerts{
+
+}
+
+.profile_button{
+    white-space: nowrap;
+
+}
+
+.userName{
+    font-weight: bolder;
+    white-space: nowrap;
+}
+
+/* user gretting section stlyes */
+#userGretting{
+    display: grid;
+    grid-template-columns:1fr 2fr;
+    grid-template-rows:1fr;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#grettingContainer{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows:1fr 1fr;
+}
+
+#gretting_user{
+    font-size: smaller;
+}
+
+#headerButtons>ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    list-style-type: none;
+    gap: 10px;
+}
+
+/* sidebar styles */
+.sidebar{
+    grid-row: span 2;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    border: double blue 3px;
+    height: 100%;
+}
+
+.sideBarButtons{
+    grid-column: span 2;
+    grid-row: 2;
+    align-self: start;
+}
+
+.sideBarButtons>ul{
+    list-style-type: none;
+}
+
+.sideBarButtons>ul>li>button{
+    width: 100px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+#dashBoard{
+    grid-column: span 2;
+    text-align: center;
+}
+
+/* main content styles */
+.main_content_container{
+    display: grid;
+    border:solid black 2px;
+    grid-template-columns: 2fr 1fr; 
+    height: 100%;
+}
+
+#announcementsAndTrending_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+}
+
+/* projects section styles in main content */
+#projects>ul{
+    display: grid;
+    grid-template-rows: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns: repeat(2,1fr);
+    list-style-type: none;
+    gap:10px;
+}
+
+#projects>h3{
+    margin-left: 9%;
+}
+
+#project_cards{
+    border: white solid 2px;
+    text-align: center;
+    height: 80%;
+}
+
+.project_card{
+    border: solid rgb(0, 0, 0) 2px;
+    border-left: solid rgb(0, 0, 0) 20px;
+}
+
+.projectTitle{
+}
+
+.projectDescription{
+    
+}
+
+/* announcements section styles in main content */
+#announcements{
+    height: 100%;
+}
+
+#announcements>ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
+
+}
+
+.announcementBlock{
+    border-bottom: solid black 1px;
+}
+
+.announcement_title{
+
+}
+
+.announcement_description{
+
+}
+
+/* trending section in main content */
+#trending{
+
+}
+
+#trending>ul{
+    list-style: none;
+}
+
+.trend{
+
+}

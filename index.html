@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,183 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <main class="container">
+        <!-- 
+            Fill out some dummy content and
+            placeholder images 
+            so you can position all of your grid items.
+         -->
+        <header class="header_container">
+            <!-- 
+                In the header, use more grids
+                to lay out the search bar,
+                user info and buttons.
+             -->
+            <div id="topHeader">
+                <!-- search bar -->
+                <section id="searchbar_container">
+                    <button id="searchButton">
+                        <svg id="searchIcon" viewBox="0 0 1024 1024">
+                            <path class="path1"
+                                d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z">
+                            </path>
+                        </svg>
+                    </button>
+                    <input type="search" name="searchbar" id="searchBar">
+                </section>
+
+                <!-- user info -->
+                <section id="user_info">
+                    <button id="alerts">
+                        alerts
+                    </button>
+
+                    <button class="profile_button">
+                        profile button
+                    </button>
+                    <p class="userName">Name of user</p>
+                </section>
+            </div>
+
+            <div id="bottomHeader">
+                <!-- gretting user -->
+                <section id="userGretting">
+                    <button class="profile_button">
+                        profile button
+                    </button>
+                    <div class="grettingContainer">
+                        <p id="gretting_user">Hi there,</p>
+                        <p class="userName">Name of user</p>
+                    </div>
+                </section>
+
+                <!-- buttons -->
+                <section id="headerButtons">
+                    <ul>
+                        <li><button>New</button></li>
+                        <li><button>Upload</button></li>
+                        <li><button>Share</button></li>
+                    </ul>
+                </section>
+            </div>
+
+        </header>
+
+        <nav class="sidebar">
+            <!--
+                In the sidebar, use more grids 
+                to lay out the navigation
+                and branding sections.
+              -->
+            <h1 id="dashBoard">
+                Dashboard
+            </h1>
+
+            <div class="sideBarButtons">
+                <ul id="dashButtons_0">
+                    <li><button>home</button></li>
+                    <li><button>profile</button></li>
+                    <li><button>messages</button></li>
+                    <li><button>history</button></li>
+                    <li><button>tasks</button></li>
+                    <li><button>communities</button></li>
+                </ul>
+
+                <ul id="dashButton_1">
+                    <li><button>setting</button></li>
+                    <li><button>support</button></li>
+                    <li><button>privacy</button></li>
+                </ul>
+            </div>
+
+
+        </nav>
+
+        <article class="main_content_container">
+            <!-- your projects -->
+            <section id="projects">
+                <h3>your projects</h3>
+                <ul id="project_cards">
+                    <li class="project_card">
+                        <h4 class="projectTitle">project 0</h4>
+                        <p class="projectDescription">project details 0</p>
+                    </li>
+                    <li class="project_card">
+                        <h4 class="projectTitle">project 1</h4>
+                        <p class="projectDescription">project details 1</p>
+                    </li>
+                    <li class="project_card">
+                        <h4 class="projectTitle">project 2</h4>
+                        <p class="projectDescription">project details 2</p>
+                    </li>
+                    <li class="project_card">
+                        <h4 class="projectTitle">project 3</h4>
+                        <p class="projectDescription">project details 3</p>
+                    </li>
+                    <li class="project_card">
+                        <h4 class="projectTitle">project 4</h4>
+                        <p class="projectDescription">project details 4</p>
+                    </li>
+                    <li class="project_card">
+                        <h4 class="projectTitle">project 5</h4>
+                        <p class="projectDescription">project details 5</p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- container to group and style-->
+            <section id="announcementsAndTrending_container">
+                <!-- Announcements -->
+                <section id="announcements">
+                    <h3>Announcements</h3>
+                    <ul>
+                        <li class="announcementBlock">
+                            <h4 class="announcement_title">
+                                all layout no function?
+                            </h4>
+                            <p class="announcement_description">
+                                this app doesn't do a thing...
+                            </p>
+                        </li>
+                        <li class="announcementBlock">
+                            <h4 class="announcement_title">
+                                all layout no function?
+                            </h4>
+                            <p class="announcement_description">
+                                this app doesn't do a thing...
+                            </p>
+                        </li>
+                        <li class="announcementBlock">
+                            <h4 class="announcement_title">
+                                all layout no function?
+                            </h4>
+                            <p class="announcement_description">
+                                this app doesn't do a thing...
+                            </p>
+                        </li>
+                    </ul>
+                </section>
     
+                <!-- Trending -->
+                <section id="trending">
+                    <h3>Trending</h3>
+                    <ul>
+                        <li class="trend">
+                            ?
+                        </li>
+                        <li class="trend">
+                            ?
+                        </li>
+                        <li class="trend">
+                            ?
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </article>
+    </main>
 </body>
+
 </html>
